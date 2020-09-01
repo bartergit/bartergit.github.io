@@ -1,1 +1,25 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<script type="text/javascript">
+	async function b(){
+		let response = await fetch("https://learn.javascript.ru/fetch");
+		if (response.ok) { // если HTTP-статус в диапазоне 200-299
+		  // получаем тело ответа (см. про этот метод ниже)
+		  let json = await response.json();
+		  console.log(json);
+		} else {
+		  alert("Ошибка HTTP: " + response.status);
+		}
+		alert(3);
+	}
+	b();
+</script>
+</body>
+</html>
