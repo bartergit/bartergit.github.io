@@ -34,7 +34,7 @@
 							<ul>
 								<li v-for="item in obj.other">
 									<a v-if="is_link(item)" :href="item[0]">{{item[1]}}</a>
-									<b v-if="!is_link(item)">{{item}}</b>
+									<template v-if="!is_link(item)">{{item}}</template>
 								</li>
 							</ul>
 						</td>
@@ -44,6 +44,12 @@
 			</tr>
 		</tbody>
 	</table>
+	<br>
+	<br>
+	<br>
+	
+	<br>
+	кто прочитал тот гей
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="index.js"></script>
