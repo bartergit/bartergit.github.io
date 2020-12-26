@@ -1648,7 +1648,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInheritDefinitionFeature"]],
       decls: 21,
       vars: 4,
-      consts: [[1, "container"], [1, "inner-container"], [2, "border", "3px lid black"], ["canvas", ""], [1, "vertical"], ["appearance", "fill"], [3, "value", "valueChange"], [3, "value", 4, "ngFor", "ngForOf"], ["name", "n", "matInput", "", "type", "number", "min", "5", 3, "ngModel", "change", "ngModelChange"], [1, "small-container"], ["invert", "", "min", "1", "max", "600", "step", "1", 3, "value", "valueChange"], ["mat-raised-button", "", "color", "warn", 3, "click"], [3, "value"]],
+      consts: [[1, "container"], [1, "inner-container"], [2, "border", "3px solid black"], ["canvas", ""], [1, "vertical"], ["appearance", "fill"], [3, "value", "valueChange"], [3, "value", 4, "ngFor", "ngForOf"], ["name", "n", "matInput", "", "type", "number", "min", "5", 3, "ngModel", "change", "ngModelChange"], [1, "small-container"], ["invert", "", "min", "1", "max", "600", "step", "1", 3, "value", "valueChange"], ["mat-raised-button", "", "color", "warn", 3, "click"], [3, "value"]],
       template: function Maze_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
