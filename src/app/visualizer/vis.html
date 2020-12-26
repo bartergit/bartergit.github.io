@@ -1,0 +1,32 @@
+<div class="container">
+	<div class="inner-container">
+		<canvas #canvas></canvas>
+		<div class="vertical">
+			<form>
+				<mat-form-field appearance="fill">
+					<mat-label>Sort type</mat-label>
+					<mat-select [(value)]="currentSort">
+						<mat-option *ngFor="let sortType of sortTypes" [value]="sortType">
+							{{sortType.name}}
+						</mat-option>
+					</mat-select>
+				</mat-form-field>
+				<mat-form-field appearance="fill">
+					<mat-label>N</mat-label>
+					<input (change)="generateArray()" name="n" [(ngModel)]="n" matInput type="number" min="5">
+				</mat-form-field>
+			</form>
+			<div>
+				<button mat-raised-button (click)="this.shuffle()">Shuffle</button>
+				<button mat-raised-button color="warn" (click)="this.beginSort()">Begin</button>
+				<button mat-raised-button color="warn" (click)="this.stop()">Stop</button>
+				<br>
+				<b>Speed</b>
+				<mat-slider [(value)]="this.time.fps" invert min="0.01" max="700" step="1"></mat-slider>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- <ngx-gist [gistId]="'bartergit/52e52c89a57e5ccdf030695972e8f371'"></ngx-gist> -->
+<!-- todo array size -->
+<!-- todo speed -->

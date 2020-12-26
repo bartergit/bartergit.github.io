@@ -1,0 +1,24 @@
+mat-slider {
+  width: 270px;
+}
+
+b {
+  margin-right: 10px;
+}
+
+form {
+  width: 50%;
+}
+
+.mat-form-field {
+  width: 45%;
+  margin-right: 20px;
+}
+
+.mat-form-field:last-child {
+  width: 30%;
+}
+
+button {
+  margin-right: 10px;
+}

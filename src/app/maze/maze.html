@@ -1,0 +1,29 @@
+<div class="container">
+	<div class="inner-container">
+		<canvas style="border:3px solid black" #canvas></canvas>
+	</div>
+	<div class="vertical">
+		<form>
+			<mat-form-field appearance="fill">
+				<mat-label>Generation type</mat-label>
+				<mat-select [(value)]="currentFunc">
+					<mat-option *ngFor="let genFunc of generationFunctions" [value]="genFunc">
+						{{genFunc.name}}
+					</mat-option>
+				</mat-select>
+			</mat-form-field>
+			<mat-form-field appearance="fill">
+				<mat-label>N</mat-label>
+				<input (change)="changeN()" name="n" [(ngModel)]="N" matInput type="number" min="5">
+			</mat-form-field>
+		</form>
+		<div class="small-container">
+			<b>Speed</b>
+			<mat-slider [(value)]="this.time.fps" invert min="1" max="600" step="1"></mat-slider>
+			<button mat-raised-button color="warn" (click)="this.beginGeneration()">Begin</button>
+		</div>
+	</div>
+</div>
+<!-- <ngx-gist [gistId]="'bartergit/52e52c89a57e5ccdf030695972e8f371'"></ngx-gist> -->
+<!-- todo array size -->
+<!-- todo speed -->
