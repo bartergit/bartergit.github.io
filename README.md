@@ -1,8 +1,8 @@
-# Personal Page
+# Personal page
 ## Maze generation visualization
 ## Sorting visualization
 ## Resume
-
+<a href="https://bartergit.github.io/"> Check it yourself! </a>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
 
 ## Development server
